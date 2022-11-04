@@ -4,3 +4,6 @@ The "Fit_degpd_zidegpd.R" function will work to fit simply discrete extended gen
 https://doi.org/10.48550/arXiv.2003.04067 behind to run our own developed R code.
 
 The example with fitting of degpd 1 model is shown "Fit_degpd_zidegpd.R" code. The other degpd 2, 3 and 4 models can be fitted by changing "m=1" to "m=2", "m=3" and "m=4". The zidegpd models can also be fitted by changing family " degpd" to "zidegpd" and putting "m=1", "m=3" and "m=4". In addition zidegpd 2 is not developed yet.
+
+
+"Note" 
