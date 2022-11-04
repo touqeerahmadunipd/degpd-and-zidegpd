@@ -10,6 +10,6 @@ The example with fitting of degpd 1 model is shown "Fit_degpd_zidegpd.R" code. T
 "Error in Rcpp::sourceCpp(files[i]) : 
   The filename 'Makevars' does not have an extension of .cc or .cpp so cannot be compiled." The code is working correctly, this error appearing from evgam package code, we are using some function behind from evgam. Surely, we will introduce our proposed models as new families in evgam.
   
-2. I check developed this code and check on window operating system, you may face problem when you excute on MAC, I will try to test the code on MAC also, and provide you the piece of code as soon as posible.     
+2. I developed and execute this code on window operating system, you may face problem when you excute on MAC, I will try to check the code on MAC also, and provide the piece of code as soon as posible.     
  
 
