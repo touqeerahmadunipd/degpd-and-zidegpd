@@ -10,8 +10,13 @@ m=3 is corresponding to model
 $$G\left(u;\psi\right)=1-D_{\delta}\{\left(1-u\right)^{\delta}\},$$
 and m=4 is corresponding to model
 $$G\left(u;\psi\right)=\left[1-D_{\delta}\{(1-u)^{\delta}\}\right]^{\kappa/2}$$
-m"m=3 is corresponding to degpd 3 in paper" and "m=4 is corresponding to degpd 3 in paper"***. The zidegpd models can also be fitted by changing family " **degpd" to "zidegpd**" and putting "**m=1 is corresponding to zidegpd 1 in paper", "m=3 is corresponding to zidegpd 2 in paper" and "m=4 is corresponding to degpd 3 in paper**". In addition zidegpd 4 is not developed yet.
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+The zidegpd models can also be fitted by changing family " **degpd**" to "**zidegpd**" and by changing **m**. The m=1 is corresponding to model $$G\left(u; \psi\right)={u}^{\kappa},$$
+m=2 is corresponding to model
+$$G\left(u;\psi\right)= p{u}^{\kappa_1} + \left(1-p\right){u}^{\kappa_2},$$
+m=3 is corresponding to model
+$$G\left(u;\psi\right)=1-D_{\delta}\{\left(1-u\right)^{\delta}\},$$
+and m=4 is corresponding to model
+$$G\left(u;\psi\right)=\left[1-D_{\delta}\{(1-u)^{\delta}\}\right]^{\kappa/2}$$
 **Note** 
 1. Ignore the error
 "Error in Rcpp::sourceCpp(files[i]) : 
