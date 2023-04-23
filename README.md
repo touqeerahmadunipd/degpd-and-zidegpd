@@ -3,11 +3,11 @@
 The "Fit_degpd_zidegpd.R" function will work to fit simply discrete extended generalized Pareto distribution (degpd) and zero-inflated discrete extended generalized Pareto distribution (zidegpd) with thier GAM forms as well. These models are proposed in the paper "Ahmad, T., Gaetan, C., & Naveau, P. (2022). Modelling of discrete extremes through extended versions of discrete generalized Pareto distribution. arXiv. https://doi.org/10.48550/arXiv.2210.15253." We are using the functions of evgam R package (Youngman, 2020): An R package for Generalized Additive Extreme Value Models. 
 https://doi.org/10.48550/arXiv.2003.04067 behind to run our own developed R code.
 
-The example with fitting of degpd 1 model is shown "Fit_degpd_zidegpd.R" code. The other degpd 2, 3 and 4 models can be fitted by changing m. In the code, the m=1 is corresponding to model $$G\left(u; \psi\right)={u}^{\kappa}$$,
+The example with fitting of degpd 1 model is shown "Fit_degpd_zidegpd.R" code. The other degpd 2, 3 and 4 models can be fitted by changing m. In the code, the m=1 is corresponding to model $$G\left(u; \psi\right)={u}^{\kappa},$$
 the m=2 is corresponding to model
-$$G\left(u;\psi\right)= p{u}^{\kappa_1} + \left(1-p\right){u}^{\kappa_2}$$,
+$$G\left(u;\psi\right)= p{u}^{\kappa_1} + \left(1-p\right){u}^{\kappa_2},$$
 the m=3 is corresponding to model
-$$G\left(u;\psi\right)=1-D_{\delta}\{\left(1-u\right)^{\delta}\}$$, 
+$$G\left(u;\psi\right)=1-D_{\delta}\{\left(1-u\right)^{\delta}\},$$
 
 m"m=3 is corresponding to degpd 3 in paper" and "m=4 is corresponding to degpd 3 in paper"***. The zidegpd models can also be fitted by changing family " **degpd" to "zidegpd**" and putting "**m=1 is corresponding to zidegpd 1 in paper", "m=3 is corresponding to zidegpd 2 in paper" and "m=4 is corresponding to degpd 3 in paper**". In addition zidegpd 4 is not developed yet.
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
