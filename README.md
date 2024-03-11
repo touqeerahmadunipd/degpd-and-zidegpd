@@ -24,6 +24,6 @@ $$G\left(u;\psi\right)=\left[1-D_{\delta}\{(1-u)^{\delta}\}\right]^{\kappa/2}$$
   
 2. We developed and executed this code on window operating system, you may face problem when you excute on MAC, we will try to check the code on MAC also, and provide the piece of code as soon as posible.    
 
-**For further discussion feel free to write me on (touqeer.ahmad@phd.unipd.it)**
+**For further discussion feel free to write me on (touqeer.ahmad@ensai.fr)**
  
 
