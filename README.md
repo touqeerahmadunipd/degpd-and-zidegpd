@@ -1,3 +1,6 @@
+**To fit discrete extended generalized Pareto distribution (degpd) and zero-inflated discrete extended generalized Pareto distribution (zidegpd), we developed a code for evgam package to new families**
+
+
 **Fitting of degpd-and-zidegpd**
 
 The "Fit_degpd_zidegpd.R" function will work to fit simply discrete extended generalized Pareto distribution (degpd) and zero-inflated discrete extended generalized Pareto distribution (zidegpd) with thier GAM forms as well. These models are proposed in the paper "Ahmad, T., Gaetan, C., & Naveau, P. (2023). A regression model for count data with extreme observations." We are using the functions of evgam R package (Youngman, 2020): An R package for Generalized Additive Extreme Value Models. 
