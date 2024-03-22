@@ -17,7 +17,7 @@ files = list.files(dest, full.names = T)
 for (i in 1:length(files)) {
   Rcpp::sourceCpp(files[i])
 }
-```R
+```
 
 
 
