@@ -3,13 +3,25 @@
 **_Intallation_**
 1. Downlaod the code set the working directory. e.g., setwd("C:\Users\atouqeer\Downloads\degpd-and-zidegpd-main\degpd-and-zidegpd-main")
 2. Call the all C++ and R functions using the following code
-   
+
+   dest <- "./R/"      # this function all R function 
+files = list.files(dest, full.names = T)
+for (i in 1:length(files)) {
+  source(files[i])
+}
+
+dest <- "./src/"  # This function will call all C++ files 
+files = list.files(dest, full.names = T)
+for (i in 1:length(files)) {
+  Rcpp::sourceCpp(files[i])
+}
 
 
 
 
 
-**Fitting of degpd-and-zidegpd**
+
+**Fitting of degpd-and-zidegpd using simulation example**
 
 We run an example on the simulation data to show how the code working. The "Fit_degpd_zidegpd.R" file simulated the data and fit simply discrete extended generalized Pareto distribution (degpd) and zero-inflated discrete extended generalized Pareto distribution (zidegpd) with thier GAM forms as well. These models are proposed in the paper "Ahmad, T., Gaetan, C., & Naveau, P. (2023). An extended generalized Pareto regression model for count data".
 
