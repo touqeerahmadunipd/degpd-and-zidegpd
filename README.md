@@ -4,7 +4,7 @@
 1. Downlaod the code set the working directory. e.g., setwd("C:\Users\atouqeer\Downloads\degpd-and-zidegpd-main\degpd-and-zidegpd-main")
 2. Call the all C++ and R functions using the following code
 
-```R
+```markdown
 dest <- "./R/"      # this function all R function 
 files = list.files(dest, full.names = T)
 for (i in 1:length(files)) {
