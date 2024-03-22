@@ -1,5 +1,13 @@
 **_To fit discrete extended generalized Pareto distribution (degpd) and zero-inflated discrete extended generalized Pareto distribution (zidegpd), we developed a code for new families and run it using evgam package fucntion_**
 
+**_Intallation_**
+1. Downlaod the code set the working directory. e.g., setwd("C:\Users\atouqeer\Downloads\degpd-and-zidegpd-main\degpd-and-zidegpd-main")
+2. Call the all C++ and R functions using the following code
+   
+
+
+
+
 
 **Fitting of degpd-and-zidegpd**
 
