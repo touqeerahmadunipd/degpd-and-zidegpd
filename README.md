@@ -11,13 +11,13 @@ for (i in 1:length(files)) {
   source(files[i])
 }
 
-```R
+
 dest <- "./src/"  
 files = list.files(dest, full.names = T)
 for (i in 1:length(files)) {
   Rcpp::sourceCpp(files[i])
 }
-
+```R
 
 
 
