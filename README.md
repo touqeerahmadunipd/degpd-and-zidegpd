@@ -25,7 +25,7 @@ for (i in 1:length(files)) {
 
 **Fitting of degpd-and-zidegpd using simulation example**
 
-We run an example on the simulation data to show how the code working. The "Fit_degpd_zidegpd.R" file simulated the data and fit simply discrete extended generalized Pareto distribution (degpd) and zero-inflated discrete extended generalized Pareto distribution (zidegpd) with thier GAM forms as well. These models are proposed in the paper "Ahmad, T., Gaetan, C., & Naveau, P. (2023). An extended generalized Pareto regression model for count data".
+We run an example on the simulation data to show how the code working. The "Fit_degpd_zidegpd.R" file simulated the data and fit simply discrete extended generalized Pareto distribution (degpd) and zero-inflated discrete extended generalized Pareto distribution (zidegpd) with thier GAM forms as well. These models are proposed in the paper "Ahmad T, Gaetan C, Naveau P. An extended generalized Pareto regression model for count data. Statistical Modelling. 2024;0(0). doi:10.1177/1471082X241266729".
 
 We are using the functions of evgam R package (Youngman, 2020): An R package for Generalized Additive Extreme Value Models. 
 https://doi.org/10.48550/arXiv.2003.04067 behind to run our own developed R code.
