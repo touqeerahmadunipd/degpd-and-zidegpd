@@ -49,7 +49,7 @@ $$G\left(u;\psi\right)=\left[1-D_{\delta}\{(1-u)^{\delta}\}\right]^{\kappa/2}$$
 "Error in Rcpp::sourceCpp(files[i]) : 
   The filename 'Makevars' does not have an extension of .cc or .cpp so cannot be compiled." The code is working correctly, this error appearing from evgam package code, we are using some function behind from evgam. Surely, we will introduce our proposed models as new families in evgam.
   
-2. We developed and executed this code on window operating system, you may face problem when you excute on MAC (some instruction may helpfull: https://thecoatlessprofessor.com/programming/cpp/r-compiler-tools-for-rcpp-on-macos/.), we will try to check the code on MAC also, and provide the piece of code as soon as posible.      
+2. We developed and executed this code on window operating system, you may face problem when you excute on MAC (some instructions may helpfull: https://thecoatlessprofessor.com/programming/cpp/r-compiler-tools-for-rcpp-on-macos/.), we will try to check the code on MAC also, and provide the piece of code as soon as posible.      
 
 **For further discussion feel free to write me on (touqeer.ahmad@ensai.fr)**
  
