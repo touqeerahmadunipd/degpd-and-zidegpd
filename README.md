@@ -1,8 +1,8 @@
 **_To fit discrete extended generalized Pareto distribution (degpd) and zero-inflated discrete extended generalized Pareto distribution (zidegpd), we developed a code for new families and run it using evgam package fucntion_**
 
 **_Intallation_**
-1. Downlaod the code and set the working directory. e.g., setwd("C:\Users\atouqeer\Downloads\degpd-and-zidegpd-main\degpd-and-zidegpd-main")
-2. Call the all C++ and R functions using the following code
+1. Download the code and set the working directory. e.g., setwd("C:\Users\atouqeer\Downloads\degpd-and-zidegpd-main\degpd-and-zidegpd-main")
+2. Call all the C++ and R functions using the following code
 
 ```markdown
 dest <- "./R/"      # this function all R function 
@@ -32,33 +32,33 @@ https://doi.org/10.48550/arXiv.2003.04067 behind to run our own developed R code
 
 The example with fitting of the degpd 1 model is shown in the "Fit_degpd_zidegpd.R" code. The other degpd models, 2, 3, and 4, can be fitted by changing m. 
 
-In the code, the m=1 is corresponding to model $$G\left(u; \psi\right)={u}^{\kappa},$$
+In the code, the $$m=1$$ is corresponding to model $$G\left(u; \psi\right)={u}^{\kappa},$$
 
 
-m=2 corresponds to the model
+$$m=2$$ corresponds to the model
 $$G\left(u;\psi\right)= p{u}^{\kappa_1} + \left(1-p\right){u}^{\kappa_2},$$
 
 
-m=3 corresponds to the model
+$$m=3$$ corresponds to the model
 $$G\left(u;\psi\right)=1-D_{\delta}\{\left(1-u\right)^{\delta}\},$$
 
 
-and m=4 corresponds to the model
+and $$m=4$$ corresponds to the model
 $$G\left(u;\psi\right)=\left[1-D_{\delta}\{(1-u)^{\delta}\}\right]^{\kappa/2}$$
 The zidegpd models can also be fitted by changing family " **degpd**" to "**zidegpd**" and by changing **m**. 
 
-The m=1 is corresponding to model $$G\left(u; \psi\right)={u}^{\kappa},$$
+The $$m=1$$ is corresponding to model $$G\left(u; \psi\right)={u}^{\kappa},$$
 
 
-m=2 is corresponding to model (**not developed yet**)
+$$m=2$$ is corresponding to model (**not developed yet**)
 $$G\left(u;\psi\right)= p{u}^{\kappa_1} + \left(1-p\right){u}^{\kappa_2},$$
 
 
-m=3 corresponds to the model
+$$m=3$$ corresponds to the model
 $$G\left(u;\psi\right)=1-D_{\delta}\{\left(1-u\right)^{\delta}\},$$
 
 
-and m=4 corresponds to the model
+and $$m=4$$ corresponds to the model
 $$G\left(u;\psi\right)=\left[1-D_{\delta}\{(1-u)^{\delta}\}\right]^{\kappa/2}$$
 
 
