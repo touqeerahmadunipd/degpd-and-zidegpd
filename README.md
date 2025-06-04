@@ -52,12 +52,7 @@ $$G\left(u;\psi\right)=\left[1-D_{\delta}\{(1-u)^{\delta}\}\right]^{\kappa/2}$$
 2. We developed and executed this code on window operating system, you may face problem when you excute on MAC (some instructions may helpfull: https://thecoatlessprofessor.com/programming/cpp/r-compiler-tools-for-rcpp-on-macos/.), we will try to check the code on MAC also, and provide the piece of code as soon as posible.
 
 
-# Project Name
-
-Brief description of your project goes here.  
-Explain what it does and any important notes.
-
----
+# If you face a problem while using macOS. To solve the issue, follow the following steps
 
 ## 🛠 Setup: GFortran + Rcpp on macOS (Apple Silicon)
 
@@ -70,7 +65,33 @@ If you are using macOS (especially on Apple Silicon) and want to compile C++ fil
 ```bash
 brew reinstall gcc
 
-     
+```
+### Step 2: Verify Installed GFortran Version
+```bash
+ls /opt/homebrew/opt/gcc/bin | grep gfortran
+
+```
+Check the version (replace with your installed version if it differs): In my case, I have version 15 as gfortran-15 --version
+
+
+### Step 3: Configure R to Use GFortran
+Edit (or create) the file ~/.R/Makevars and add:
+```bash
+nano ~/.R/Makevars
+```
+Paste the following (replace 15 with your version if different):
+```
+FC = /opt/homebrew/opt/gcc/bin/gfortran-15
+F77 = /opt/homebrew/opt/gcc/bin/gfortran-15
+
+FLIBS = -L/opt/homebrew/opt/gcc/lib/gcc/15 -lgfortran -lquadmath -lm
+
+CXXFLAGS = -I/opt/homebrew/include
+LDFLAGS = -L/opt/homebrew/opt/gcc/lib/gcc/15 -lgfortran -lquadmath -lm
+
+```
+Save (Ctrl+O) the file and exit (Ctrl+X) the editor.
+### 
 
 **For further discussion, feel free to write me on (touqeer.ahmad@ensai.fr)**
  
