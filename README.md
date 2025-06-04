@@ -36,16 +36,16 @@ The example with fitting of the degpd 1 model is shown in the "Fit_degpd_zidegpd
 In the code, the $$m=1$$ is corresponding to model $$G\left(u; \psi\right)={u}^{\kappa},$$
 
 ---
-$$m=2$$ corresponds to the model
+m=2 corresponds to the model
 $$G\left(u;\psi\right)= p{u}^{\kappa_1} + \left(1-p\right){u}^{\kappa_2},$$
 
 ---
-$$m=3$$ corresponds to the model
+m=3 corresponds to the model
 $$G\left(u;\psi\right)=1-D_{\delta}\{\left(1-u\right)^{\delta}\},$$
 
 ---
 
-and $$m=4$$ corresponds to the model
+and m=4 corresponds to the model
 $$G\left(u;\psi\right)=\left[1-D_{\delta}\{(1-u)^{\delta}\}\right]^{\kappa/2}$$
 
 ---
