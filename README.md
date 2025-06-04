@@ -74,7 +74,7 @@ $$G\left(u;\psi\right)=\left[1-D_{\delta}\{(1-u)^{\delta}\}\right]^{\kappa/2}$$
 2. We developed and executed this code on the Windows operating system. You may face problems when you run on a macOS (some instructions may be helpful: https://thecoatlessprofessor.com/programming/cpp/r-compiler-tools-for-rcpp-on-macos/). OR, follow the instructions below.
 
 
-# If you are using macOS (especially on Apple Silicon) and want to compile C++ files with `Rcpp`, follow these steps to set up `gfortran` and avoid linker errors.
+# If you are using macOS and facing problems in compiling C++ files with `Rcpp`, follow these steps to set up `gfortran` and avoid linker errors.
 
 ## 🛠 Setup: GFortran + Rcpp on macOS (Apple Silicon)
 
