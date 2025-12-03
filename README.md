@@ -135,6 +135,6 @@ for (i in seq_along(files)) {
 ```
 
 ---
-**For further discussion, feel free to write me at (touqeer.ahmad8960@gmail.com)**
+**For further discussion, feel free to write me at (touqeer.ahmad8960@gmail.com; touqeera@math.uio.no)**
  
 
