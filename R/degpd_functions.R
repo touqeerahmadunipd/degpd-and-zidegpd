@@ -417,3 +417,18 @@ rzidiscegpd <- function(n,pi=NA, prob = NA, kappa = NA, delta = NA, sigma = NA, 
   y <- (1-z)*rdiscegpd(n, prob = prob, kappa = kappa, delta = delta, sigma = sigma, xi = xi, type = type, unifsamp = NULL)
   return(y)
 }
+
+
+
+#Residuals plots
+
+plot_residuals<- function(residuals, title, file_name) {
+  res_df <- data.frame(residuals = residuals)
+  p <- ggplot(res_df, aes(sample = residuals)) +
+    stat_qq(shape = 20, size = 1.5, color = "gray") +
+    stat_qq_line(color = "red", linewidth = 0.5) +
+    labs(title = title, x = "Theoretical Quantiles", y = "Empirical Quantiles") +
+    theme_minimal()
+  print(p)
+  #ggsave(file_name, plot = p, width = 5, height = 5, dpi = 300)
+}
