@@ -1,4 +1,4 @@
-setwd("D:/DEVGAM/evgam-master/") #set working directory 
+setwd("~/Downloads/degpd-and-zidegpd-main 3")
 
 dest <- "./R/"      # this function all R function 
 files = list.files(dest, full.names = T)
@@ -33,3 +33,19 @@ est_par =predict(degpd1, type = 'response')
 head(est_par)
 plot(degpd1)
 q<-predict(degpd1,  prob = c(.50,0.75,0.99))
+
+
+# DEGPD residuals
+sigma <- exp(degpd1$logscale$fitted)
+shape <- exp(degpd1$logshape$fitted)
+kappa <- exp(degpd1$logkappa$fitted)
+#If you have zero inflated model
+#pi <- exp(zidegpd_model$logitpi$fitted) / (1 + exp(zidegpd_model$logitpi$fitted))
+p.phat.l <- pdiscegpd(test_df$y - 1, kappa = kappa, sigma = sigma, xi = shape, type = 1)
+p.phat.u <- pdiscegpd(test_df$y, kappa = kappa, sigma = sigma, xi = shape, type = 1)
+n<- length(test_df$y)
+u <- runif(n, p.phat.l, p.phat.u)
+r_degpd <- qnorm(u)
+r_degpd <- r_degpd[!is.infinite(r_degpd)]
+plot_residuals(r_degpd, "Randomized Residual Q-Q Plot")
+
