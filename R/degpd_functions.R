@@ -144,7 +144,7 @@ q.G <- function(u, type = 1, prob = NA, kappa = NA, delta = NA) {
   } else if (type == 2) {
     F.min <- 1-pnorm(1, mean = 0, sd = 1/sqrt(kappa))
     F.max <- pnorm(1, mean = 1, sd = 1/sqrt(kappa))
-    q <- (qnorm(u* (F.max - F.min) + (F.min), mean = 0, 
+    q <- (qnorm(u* (F.max - F.min) + (F.min), mean = 0,
                 sd = 1))/sqrt(kappa) +1
     return(q)
   }else if (type == 3) {
@@ -313,7 +313,7 @@ dzidiscegpd<-function(x,  pi = NA,prob = NA, kappa = NA, delta = NA, sigma = NA,
   fy
 }
 
-dzidiscegpd(x, type = 3, pi=0.1, kappa = 1, sigma = 1, xi=0.3)
+#dzidiscegpd(x, type = 3, pi=0.1, kappa = 1, sigma = 1, xi=0.3)
 ##################################
 # CDF ---------------------------------------------------------------------------------------------
 pzidiscegpd<-function(q, pi = NA,prob = NA, kappa = NA, delta = NA, sigma = NA, xi = NA, type = 1)
@@ -345,7 +345,7 @@ pzidiscegpd<-function(q, pi = NA,prob = NA, kappa = NA, delta = NA, sigma = NA, 
   #if (any(delta <= 0) )  stop(paste("mu must be greater than 0", "\n", ""))
   if (any(sigma <= 0) )  stop(paste("sigma must be greater than 0", "\n", ""))
   if (any(xi <= 0) )  stop(paste("xi must be greater than 0", "\n", ""))
-  
+
   if (any(q < -1) )  stop(paste("y must be 0 or greater than 0", "\n", ""))
   ly <- max(length(q),length(pi),length(prob),length(kappa),length(delta),length(sigma),length(xi))
   q <- rep(q, length = ly)
@@ -366,7 +366,7 @@ pzidiscegpd<-function(q, pi = NA,prob = NA, kappa = NA, delta = NA, sigma = NA, 
 
 qzidiscegpd <- function(p,  pi = NA,prob = NA, kappa = NA, delta = NA, sigma = NA, xi = NA, type = 1)
 {
-  
+
   if (type==1) {
     if (any(kappa <= 0) )  stop(paste("kappa must be greater than 0", "\n", ""))
   }
