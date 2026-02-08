@@ -62,10 +62,7 @@ summary(fit)
 
 
 
-
-
-
-
+# Instructions for use of the old code, which is provided in this repository, if one is not using the egpd package. But we suggest to use [egpd](https://github.com/sdwfrost/egpd) package. 
 
 
 **_To fit discrete extended generalized Pareto distribution (degpd) and zero-inflated discrete extended generalized Pareto distribution (zidegpd), we developed a code for new families and run it using evgam package fucntions_**
