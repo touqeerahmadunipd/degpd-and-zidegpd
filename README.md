@@ -1,3 +1,68 @@
+# egpd: Extended Generalized Pareto Distribution GAMs
+
+The **egpd** package fits Extended Generalized Pareto Distribution (EGPD),
+Discrete EGPD (DEGPD), and Zero-Inflated Discrete EGPD (ZIDEGPD) models
+within a GAM (Generalized Additive Model) framework, with additional
+support for fitting via
+[gamlss](https://CRAN.R-project.org/package=gamlss) and
+[bamlss](https://CRAN.R-project.org/package=bamlss). The fitting
+infrastructure is adapted from the
+[evgam](https://CRAN.R-project.org/package=evgam) package by Ben Youngman.
+
+Models 1--6 are supported for each distribution family. Models 1--4
+follow the parameterizations of Naveau et al. (2016), and Models 5--6
+follow Gamet & Jalbert (2022). Each model extends the standard GPD by
+composing it with a transformation function *G*:
+
+| Model | G-function | Parameters | Description |
+|-------|------------|------------|-------------|
+| 1 | Power: *G*(*u*) = *u*^*κ* | *σ*, *ξ*, *κ* | Simplest; reduces to standard GPD when *κ* = 1 |
+| 2 | Mixture: *G*(*u*) = *p* *u*^*κ*₁ + (1−*p*) *u*^*κ*₂ | *σ*, *ξ*, *κ*₁, Δ*κ*, *p* | Mixture of two power transformations |
+| 3 | Incomplete beta | *σ*, *ξ*, *δ* | Beta CDF transformation; more flexible bulk |
+| 4 | Power-beta | *σ*, *ξ*, *δ*, *κ* | Combines power and beta; most flexible |
+| 5 | Truncated normal | *σ*, *ξ*, *κ* | Truncated normal CDF transformation |
+| 6 | Truncated beta | *σ*, *ξ*, *κ* | Truncated beta CDF transformation |
+
+Here *σ* is the GPD scale, *ξ* is the GPD shape, and the remaining
+parameters control the *G*-function.
+
+## Installation
+
+Install the development version from GitHub:
+
+```r
+# install.packages("remotes")
+remotes::install_github("sdwfrost/egpd")
+```
+
+## Quick start
+
+```r
+library(egpd)
+
+# Fit a DEGPD model to insurance complaint counts
+data(ny_complaints)
+fit <- egpd(
+  list(upheld ~ s(year), ~ 1, ~ 1),
+  data = ny_complaints,
+  family = "degpd",
+  degpd.args = list(m = 1)
+)
+summary(fit)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 **_To fit discrete extended generalized Pareto distribution (degpd) and zero-inflated discrete extended generalized Pareto distribution (zidegpd), we developed a code for new families and run it using evgam package fucntions_**
 
 **_Intallation_**
