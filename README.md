@@ -1,5 +1,5 @@
 
-We created a unified R package by using above code. Please follow the instruction below. 
+We created a unified R package based on the code above and additional enhancements. Please follow the instructions below to use the egpd package. 
 
 
 
