@@ -1,5 +1,5 @@
 
-We created a unified R package based on the code above and additional enhancements. Please follow the instructions below to use the egpd package. 
+We created a unified R package [egpd](https://github.com/sdwfrost/egpd) based on the code above and additional enhancements. Please follow the instructions for installation and use. 
 
 
 
