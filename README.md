@@ -1,3 +1,8 @@
+
+We created a unified R package by using above code. Please follow the instruction below. 
+
+
+
 # egpd: Extended Generalized Pareto Distribution GAMs
 
 The **egpd** package fits Extended Generalized Pareto Distribution (EGPD),
